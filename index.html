@@ -1,0 +1,257 @@
+<link rel="stylesheet" href="design.css">
+<script src="app.js"></script>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Ocean Rescue AI</title>
+
+<link rel="stylesheet" href="design.css">
+```
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌊 Ocean Rescue AI</h1>
+    <p>Intelligent & Ethical Rescue Coordination System</p>
+</header>
+
+<main>
+
+```
+<section class="stats">
+
+    <div class="stat-card">
+        <h3>🚨 Active Emergencies</h3>
+        <h2 id="emergencyCount">3</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>🚤 Rescue Teams</h3>
+        <h2>5 Available</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>🤖 AI Status</h3>
+        <h2>Online</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>🔒 Privacy</h3>
+        <h2>Protected</h2>
+    </div>
+
+</section>
+
+
+<section class="dashboard">
+
+    <div class="panel">
+
+        <h2>🚨 Report Emergency</h2>
+
+        <label>Victim / Boat ID</label>
+        <input type="text" id="victim" placeholder="Example: Boat 102">
+
+        <label>Location</label>
+        <input type="text" id="location" placeholder="Enter GPS location">
+
+        <label>Emergency Type</label>
+
+        <select id="emergencyType">
+            <option>Person Overboard</option>
+            <option>Boat Accident</option>
+            <option>Medical Emergency</option>
+            <option>Severe Weather Risk</option>
+        </select>
+
+        <button onclick="analyzeEmergency()">
+            Analyze Emergency 🤖
+        </button>
+
+    </div>
+
+
+    <div class="panel">
+
+        <h2>🤖 AI Decision Support</h2>
+
+        <div class="risk-box">
+
+            <h3>Risk Level</h3>
+
+            <h2 id="riskLevel">--</h2>
+
+        </div>
+
+        <div class="risk-box">
+
+            <h3>AI Recommendation</h3>
+
+            <p id="recommendation">
+                Waiting for emergency data...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="panel">
+
+        <h2>👨‍✈️ Human Oversight</h2>
+
+        <p>
+            AI provides recommendations, but humans approve
+            critical rescue actions.
+        </p>
+
+        <button class="approve-btn" onclick="approveRescue()">
+            Approve Rescue Action
+        </button>
+
+        <p id="approvalStatus"></p>
+
+    </div>
+
+</section>
+
+<section class="data-section">
+
+    <h2>📊 Live Emergency Data</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Emergency ID</th>
+                    <th>Location</th>
+                    <th>Emergency</th>
+                    <th>Weather</th>
+                    <th>Risk</th>
+                    <th>Rescue Team</th>
+                </tr>
+            </thead>
+
+            <tbody id="emergencyTable">
+
+                <tr>
+                    <td>BOAT-102</td>
+                    <td>13.08° N, 80.27° E</td>
+                    <td>Person Overboard</td>
+                    <td>Moderate Waves</td>
+                    <td>🔴 Critical</td>
+                    <td>Team Alpha</td>
+                </tr>
+
+                <tr>
+                    <td>BOAT-130</td>
+                    <td>13.15° N, 80.35° E</td>
+                    <td>Boat Accident</td>
+                    <td>Strong Wind</td>
+                    <td>🔴 High</td>
+                    <td>Team Bravo</td>
+                </tr>
+
+                <tr>
+                    <td>MED-205</td>
+                    <td>12.90° N, 80.45° E</td>
+                    <td>Medical Emergency</td>
+                    <td>Clear</td>
+                    <td>🟠 Medium-High</td>
+                    <td>Team Charlie</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="ethics">
+
+    <h2>⚖️ Ethical AI Principles</h2>
+
+    <div class="ethics-grid">
+
+        <div class="ethics-card">
+            <h3>🔒 Privacy</h3>
+            <p>Protect victim information.</p>
+        </div>
+
+        <div class="ethics-card">
+            <h3>🛟 Safety</h3>
+            <p>Fail safely when data is uncertain.</p>
+        </div>
+
+        <div class="ethics-card">
+            <h3>⚖️ Fairness</h3>
+            <p>Use equal rescue priority criteria.</p>
+        </div>
+
+        <div class="ethics-card">
+            <h3>🔍 Transparency</h3>
+            <p>Explain AI recommendations clearly.</p>
+        </div>
+
+        <div class="ethics-card">
+            <h3>👤 Human Oversight</h3>
+            <p>Humans control critical decisions.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="flow">
+
+    <h2>🌊 Rescue Coordination Flow</h2>
+
+    <div class="flow-container">
+
+        <div>📡 DATA</div>
+        <span>→</span>
+
+        <div>🤖 AI</div>
+        <span>→</span>
+
+        <div>📊 DECISION</div>
+        <span>→</span>
+
+        <div>🚤 COORDINATE</div>
+        <span>→</span>
+
+        <div>🛟 RESCUE</div>
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<footer>
+
+```
+<p>
+    Ethical Product Development in Intelligent Ocean Rescue Coordination Systems
+</p>
+```
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
